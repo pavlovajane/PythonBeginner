@@ -1,14 +1,14 @@
+menu = []
 
-parrot_list = ["non pinin", "no more", "a stiff", "berefit of live"]
+menu.append(["egg", "bacon", "spam"])
+menu.append(["bacon", "egg", "sausage"])
+menu.append(["bacon", "spam", "spam"])
+menu.append(["egg", "spam", "bacomn", "spam"])
+menu.append(["spam", "spam", "spam"])
+menu.append(["bacon", "egg", "spam"])
 
-parrot_list.append("Norwegian Blue")
-for state in parrot_list:
-    print("This parrot is "+state)
+for meal in menu:
+    if not "spam" in meal:
+        for dish in meal:
+            print(dish)
 
-even = [1,2,3,4]
-odd = [1,3,4,4,4]
-numbers = even + odd
-print(numbers)
-
-sortedNumbers = sorted(numbers)
-print(sortedNumbers)
