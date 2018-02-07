@@ -1,14 +1,8 @@
-menu = []
 
-menu.append(["egg", "bacon", "spam"])
-menu.append(["bacon", "egg", "sausage"])
-menu.append(["bacon", "spam", "spam"])
-menu.append(["egg", "spam", "bacomn", "spam"])
-menu.append(["spam", "spam", "spam"])
-menu.append(["bacon", "egg", "spam"])
+someList = '01234567789343'
+myIter = iter(someList)
+length = len(someList)
 
-for meal in menu:
-    if not "spam" in meal:
-        for dish in meal:
-            print(dish)
-
+for i in range(0,length):
+    next_iter = next(myIter)
+    print(next_iter)
